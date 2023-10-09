@@ -1,24 +1,31 @@
-# Insights
-**Market Basket Insights**
+Analysis Plan
+The analysis plan is to answer the questions.
 
-This project aims to provide valuable insights into market basket analysis, a fundamental technique in retail analytics. Market basket analysis helps businesses understand customer purchasing patterns by uncovering associations between products frequently purchased together. By analyzing transaction data, this repository offers a set of tools and algorithms for identifying these patterns and extracting actionable insights.
+What are the most frequently sold items?
+what are the consequents of the chosen items?
+How confident do the consequents come after the items?
+What are the most important items that should always be in the store?
+How the item network looks like?
+What is the difference between analyzing the data based on customer ID and different transactions?
 
-**Key Features:**
+Method
+This analysis will load the 2 datasets. The first one with member IDs will be used for creating a basket model based on IDs. The other one will be used for creating a model based on transactions. Literately, the total number of sold items should be the same. The analysis steps are as below.
 
-- **Apriori Algorithm**: Discover frequent itemsets and association rules to reveal product relationships within transactions.
-- **Visualizations**: Generate interactive visualizations, such as heatmaps and network graphs, to intuitively showcase item associations.
-- **Recommendation Engine**: Implement a recommendation system based on user purchase history and similar customer behavior.
-- **Data Preprocessing**: Clean and preprocess transaction data for efficient analysis.
-- **Scalability**: Scalable algorithms to handle large transaction datasets efficiently.
+Prepare the 2 .csv files
+A bar chart to see the most frequently sold items
+A quick look at the relationship between items
+Select an item to proceed a further analysis
+A heatmap to review the association between antecedents and consequents
+A network graphic to know the connections of the selected item
 
-**Getting Started:**
+Process
+First of all, load the essential packages and read
 
-To get started, simply clone this repository and follow the setup instructions in the documentation. You can begin analyzing market basket data and extracting meaningful insights to optimize your product offerings and enhance customer experiences.
 
-**Contributions:**
+show 
+File name: Assignment-1_Data
+List name: retaildata
+File format: . xlsx
+Number of Row: 522065
+Number of Attributes: 7
 
-Contributions and feedback are welcome! Whether you're interested in improving the algorithms, enhancing visualizations, or expanding the project's functionality, we encourage you to collaborate and make this tool even more valuable for the community.
-
-**License:**
-
-This project is licensed under the [MIT License](LICENSE.md).
